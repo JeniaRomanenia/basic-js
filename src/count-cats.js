@@ -22,10 +22,11 @@ function countCats(matrix) {
       for (let j = 0; j < matrix[i].length; j++){
         if (matrix[j][i] === cat) {
           sum++;
-        } 
+        } else {
+          sum = 0;
       }
     }
-    return console.log(sum);
+    return sum;
 }
 
 module.exports = {
