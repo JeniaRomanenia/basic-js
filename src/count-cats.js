@@ -23,7 +23,8 @@ function countCats(matrix) {
         if (matrix[j][i] === cat) {
           sum++;
         } else {
-          sum = 0;
+          return sum = 0;
+        }
       }
     }
     return sum;
